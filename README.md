@@ -13,7 +13,7 @@ gem 'infrataster-plugin-ssl_certificates'
 And then add the following line to your spec_helper.rb:
 
 ```ruby
-reuire 'infrataster-plugin-ssl_certificates'
+require 'infrataster-plugin-ssl_certificates'
 ```
 
 ## Usage

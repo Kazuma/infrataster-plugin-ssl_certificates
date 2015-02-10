@@ -7,7 +7,7 @@ module Infrataster
       def certificate
         https = Net::HTTP.new(resource.url.host, resource.url.port)
         https.use_ssl = true
-        https.verify_mode = OpenSSL::SSL::VERIFY_NONE
+        https.verify_mode = OpenSSL::SSL::VERIFY_PEER
         https.start do
           https.peer_cert
         end

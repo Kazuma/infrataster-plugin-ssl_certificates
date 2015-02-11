@@ -1,5 +1,7 @@
 # Infrataster::Plugin::SslCertificates
 
+[![Gem Version](https://badge.fury.io/rb/infrataster-plugin-ssl_certificates.svg)](http://badge.fury.io/rb/infrataster-plugin-ssl_certificates)
+
 Check SSL certificates plugin for [infrataster](https://github.com/ryotarai/infrataster)
 
 ## Installation

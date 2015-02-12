@@ -5,14 +5,15 @@ module Infrataster
     class SslCertificatesResource < BaseResource
       Error = Class.new(StandardError)
 
-      attr_reader :url
+      attr_reader :domain, :options
 
-      def initialize(url)
-        @url = URI.parse(url)
+      def initialize(domain, options = {})
+        @domain = domain
+        @options = options
       end
 
       def to_s
-        "SSL Certification: #{@url}"
+        "SSL Certification: #{@domain}"
       end
     end
   end

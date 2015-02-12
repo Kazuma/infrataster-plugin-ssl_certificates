@@ -25,11 +25,21 @@ require 'infrataster-plugin-ssl_certificates'
 reuqire 'spec_helper'
 
 describe server(:app) do
-  describe domain('https://www.example.com') do
+  describe domain('example.com') do
     it { expect(certificate.serial).to eq(1234567) }
     it { expect(certificate.not_after.to_s).to eq("2015-12-31 18:00:00 UTC") }
   end
 end
+```
+
+You can specify port number by options passed to Infrataster::Server.define in spec_helper.rb:
+
+```ruby
+Infrataster::Server.define(
+  :app,
+  '192.168.33.10',
+  ssl: { port: 8443 }
+  )
 ```
 
 ## Contributing

@@ -5,7 +5,13 @@ module Infrataster
   module Contexts
     class SslCertificatesContext < BaseContext
       def certificate
-        https = Net::HTTP.new(resource.url.host, resource.url.port)
+        options = { port: 443 }
+
+        if server.options[:ssl]
+          options = options.merge(server.options[:ssl])
+        end
+
+        https = Net::HTTP.new(resource.domain, options[:port])
         https.use_ssl = true
         https.verify_mode = OpenSSL::SSL::VERIFY_PEER
         https.start do

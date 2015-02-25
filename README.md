@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/infrataster-plugin-ssl_certificates.svg)](http://badge.fury.io/rb/infrataster-plugin-ssl_certificates)
 [![Dependency Status](https://gemnasium.com/Kazuma/infrataster-plugin-ssl_certificates.svg)](https://gemnasium.com/Kazuma/infrataster-plugin-ssl_certificates)
-
+[![Build Status](https://travis-ci.org/Kazuma/infrataster-plugin-ssl_certificates.svg?branch=master)](https://travis-ci.org/Kazuma/infrataster-plugin-ssl_certificates)
 
 Check SSL certificates plugin for [infrataster](https://github.com/ryotarai/infrataster)
 

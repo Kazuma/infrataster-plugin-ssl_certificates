@@ -4,7 +4,7 @@
 [![Dependency Status](https://gemnasium.com/Kazuma/infrataster-plugin-ssl_certificates.svg)](https://gemnasium.com/Kazuma/infrataster-plugin-ssl_certificates)
 [![Build Status](https://travis-ci.org/Kazuma/infrataster-plugin-ssl_certificates.svg?branch=master)](https://travis-ci.org/Kazuma/infrataster-plugin-ssl_certificates)
 
-Check SSL certificates plugin for [infrataster](https://github.com/ryotarai/infrataster)
+Check SSL certificates plugin for [Infrataster](https://github.com/ryotarai/infrataster)
 
 ## Installation
 
